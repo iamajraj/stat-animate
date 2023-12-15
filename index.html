@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      StatAnimate JS - a utility to add counting animation in your webpage
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="lib/statanimate.js" defer></script>
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+      }
+    </style>
+  </head>
+  <body
+    class="min-h-screen w-full flex items-center justify-center bg-slate-100">
+    <div
+      class="w-full max-w-4xl bg-white border rounded-lg shadow-md pt-14 px-14 pb-5 flex flex-col">
+      <h1 class="text-center text-3xl font-bold">StatAnimate Demo</h1>
+      <p class="mt-5">
+        Enhance your webpage with dynamic and animated stat counters using
+        StatAnimate, a lightweight JavaScript script.
+      </p>
+      <div class="stat-root mt-5 flex items-center gap-10 justify-center">
+        <p
+          class="text-2xl border text-center rounded-lg px-14 py-4 min-w-[160px]"
+          data-count="20"
+          data-count-ms="500"
+          data-count-suffix="%">
+          0%
+        </p>
+        <p
+          class="text-2xl border text-center rounded-lg px-14 py-4 min-w-[160px]"
+          data-count="700"
+          data-count-suffix="K">
+          0K
+        </p>
+        <p
+          class="text-2xl border text-center rounded-lg px-14 py-4 min-w-[160px]"
+          data-count="1000">
+          0
+        </p>
+      </div>
+      <p class="mt-5 text-sm">
+        You can modify numbers using
+        <code class="font-bold mx-2 bg-gray-100">data-count</code> attribute
+      </p>
+      <p class="mt-2 text-sm">
+        You can modify speed using
+        <code class="font-bold mx-2 bg-gray-100">data-count-ms</code>
+        attribute
+      </p>
+      <p class="mt-2 text-sm">
+        You can add suffix to it using
+        <code class="font-bold mx-2 bg-gray-100">data-count-suffix</code>
+        attribute
+      </p>
+      <div class="flex items-center justify-end gap-4">
+        <a
+          target="_blank"
+          href="https://github.com/iamajraj"
+          class="mt-8 flex items-center gap-2">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+            alt="github"
+            class="w-4" />
+          <p class="text-sm">Author/iamajraj</p>
+        </a>
+
+        <a
+          target="_blank"
+          href="https://github.com/iamajraj/statanimate"
+          class="mt-8 flex items-center gap-2">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+            alt="github"
+            class="w-4" />
+          <p class="text-sm">Source Code</p>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
